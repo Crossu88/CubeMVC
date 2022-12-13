@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/CubeViewUI.uss?fileID=7433441132597879392&amp;guid=919c43cea7c85ac4d9ebb4ac3450b6f7&amp;type=3#CubeViewUI" />
+    <ui:VisualElement picking-mode="Ignore" name="Root" style="height: 100%; flex-direction: row;">
+        <ui:VisualElement style="width: auto; padding-left: 12px; padding-right: 12px; padding-top: 12px; background-color: rgba(0, 0, 0, 0.31);">
+            <ui:Label text="Cube Settings" display-tooltip-when-elided="true" style="-unity-font-style: bold; font-size: 24px; border-bottom-width: 1px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); padding-bottom: 4px; margin-bottom: 4px;" />
+            <ui:VisualElement name="SizeSettings" style="min-width: 275px; flex-direction: column;">
+                <ui:Label text="Cube Size" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+                <ui:Slider picking-mode="Ignore" label="Width" value="1" high-value="5" low-value="1" name="WidthSlider" style="margin-left: 6px;" />
+                <ui:Slider picking-mode="Ignore" label="Length" value="1" high-value="5" low-value="1" name="LengthSlider" style="margin-left: 6px;" />
+                <ui:Slider picking-mode="Ignore" label="Height" value="1" high-value="5" low-value="1" name="HeightSlider" style="margin-left: 6px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ColorSettings" style="flex-direction: column; min-width: 275px;">
+                <ui:Label text="Cube Color" display-tooltip-when-elided="true" style="-unity-font-style: bold;" />
+                <ui:Slider picking-mode="Ignore" label="Red" value="1" high-value="1" low-value="0" name="RedSlider" style="margin-left: 6px;" />
+                <ui:Slider picking-mode="Ignore" label="Green" value="1" high-value="1" low-value="0" name="GreenSlider" show-input-field="false" inverted="false" style="margin-left: 6px;" />
+                <ui:Slider picking-mode="Ignore" label="Blue" value="1" high-value="1" low-value="0" name="BlueSlider" style="margin-left: 6px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
